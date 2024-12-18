@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daum Cafe Clone</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" type="images/x-icon" href="images/favicon/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header class="top-container">
+      <section class="top row">
+          <div class="col-1">
+             <a href="#"><img src="images/svg/reddit.svg" alt="logo" class="top-logo"></a>
+          </div>
+          <div class="top-right offset-9 col-2 d-flex justify-content-end align-items-center">
+             <a href="#" class="top-login">로그인</a>
+             <a href="#" class="top-email"><i class="ri-mail-line"></i></a>
+             <div class="grid-fill"><i class="ri-layout-grid-fill"></i>
+                <div class="subnav">
+                    <div class="d-flex">
+                        <div class="subcol">
+                            <a href="#">
+                                <img src="images/svg/home.svg" alt="home"/><br>
+                                카페
+                            </a>
+                        </div>
+                        <div class="subcol">
+                            <a href="#">
+                                <img src="images/svg/news.svg" alt="news"/><br>
+                                뉴스
+                            </a>
+                        </div>
+                        <div class="subcol">
+                            <a href="#">
+                                <img src="images/svg/heat_map.svg" alt="home"/><br>
+                                지도
+                            </a>
+                        </div>
+                        <div class="subcol">
+                            <a href="#">
+                                <img src="images/svg/shop.svg" alt="home"/><br>
+                                쇼핑
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="subcol">
+                          <ul>
+                            <li><a href="#">티스토리</a></li>
+                            <li><a href="#">브런치</a></li>
+                            <li><a href="#">카카오TV</a></li>
+                            <li><a href="#">게임</a></li>
+                          </ul>
+                        </div>
+                        <div class="subcol">
+                            <ul>
+                                <li><a href="#">티스토리</a></li>
+                                <li><a href="#">브런치</a></li>
+                                <li><a href="#">카카오TV</a></li>
+                                <li><a href="#">게임</a></li>
+                              </ul>
+                        </div>
+                        <div class="subcol">
+                            <ul>
+                                <li><a href="#">티스토리</a></li>
+                                <li><a href="#">브런치</a></li>
+                                <li><a href="#">카카오TV</a></li>
+                                <li><a href="#">게임</a></li>
+                              </ul>
+                        </div>
+                        <div class="subcol">
+                            <ul>
+                                <li><a href="#">티스토리</a></li>
+                                <li><a href="#">브런치</a></li>
+                                <li><a href="#">카카오TV</a></li>
+                                <li><a href="#">게임</a></li>
+                              </ul>
+                        </div>
+                    </div>
+                    <div class="box-bottom">
+                        <a href="#">전체보기</a>
+                    </div>
+                </div>
+             </div>
+          </div>
+      </section>  
+      <div class="container">
+        <div class="row top-nav">
+            <div class="col-1"><a href="#" class="main-logo">cafe</a></div>
+            <div class="col-4">
+                <nav class="d-flex justify-content-around">
+                    <a href="#" class="active">홈</a>
+                    <a href="#" class="table">테이블</a>
+                    <a href="#">팬카페</a>
+                    <a href="#">카페랭킹</a>
+                    <a href="#">내카페</a>
+                </nav>
+            </div>
+            <div class="offset-3 col-4">
+                <form class="d-flex justify-content-end">
+                    <div class="dropdown">
+                        <div class="dropdown-selected">전체검색 <i id="dropdown-icon" class="ri-arrow-down-s-line"></i></div>
+                        <ul class="dropdown-options">
+                            <li data-value="all" class="active">전체검색</li>
+                            <li data-value="all-t">통합검색</li>
+                            <li data-value="cafe">카페검색</li>
+                            <li data-value="table">테이블검색</li>
+                            <li data-value="shot">샷검색</li>
+                        </ul>
+                    </div>
+                    <input type="text" class="search-box" name="search" placeholder="검색어를 입력하세요.">
+                    <button type="button" class="search-button"><i class="ri-search-line"></i></button>
+                    <input type="hidden" name="select" id="select">
+                 </form>
+            </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="hero container">
+       <div class="hero-box act">
+           <h2 class="fadeIn5"><span>이야기 하나</span>우리가 올림픽에 과몰입하는 이유 🥇</h2>
+           <ul>
+               <li class="fadeIn4"><a href="#" class="active"><span>오상욱, 오예진이 받게 될 시계 선물.jpg </span> <span>도탁스 (DOTAX)</span></a></li>
+               <li class="fadeIn3"><a href="#"><span>현재 대한민국 올림픽 금메달 종목 특이점.jpg</span> <span>＊여성시대＊ 차분한 20대들의 알흠다운 공간</span></a></li>
+               <li class="fadeIn2"><a href="#"><span>공기소총 반효진 선수 소름인점</span> <span>樂soccer</span></a></li>
+               <li class="fadeIn1"><a href="#"><span>매력 터지는 공기권총 10m 은메달 김예지 인터뷰</span> <span>도탁스 (DOTAX)</span></a></li>
+           </ul>
+       </div> 
+
+
+       <div class="hero-box">
+          <h2 class="fadeIn5"><span>이야기 둘</span>올림픽 시즌에 밈 놓치면 늦어 🏹</h2>
+          <ul>
+              <li class="fadeIn4"><a href="#" class="active"><span>오상욱, 오예진이 받게 될 시계 선물.jpg </span> <span>도탁스 (DOTAX)</span></a></li>
+              <li class="fadeIn3"><a href="#"><span>현재 대한민국 올림픽 금메달 종목 특이점.jpg</span> <span>＊여성시대＊ 차분한 20대들의 알흠다운 공간</span></a></li>
+              <li class="fadeIn2"><a href="#"><span>공기소총 반효진 선수 소름인점</span> <span>樂soccer</span></a></li>
+              <li class="fadeIn1"><a href="#"><span>매력 터지는 공기권총 10m 은메달 김예지 인터뷰</span> <span>도탁스 (DOTAX)</span></a></li>
+          </ul>
+       </div> 
+
+
+
+       <div class="hero-box">
+        <h2 class="fadeIn5"><span>이야기 셋</span>자본의맛tv, 미국의 이모저모 🇺🇸</h2>
+        <ul>
+            <li class="fadeIn4"><a href="#" class="active"><span>오상욱, 오예진이 받게 될 시계 선물.jpg </span> <span>도탁스 (DOTAX)</span></a></li>
+            <li class="fadeIn3"><a href="#"><span>현재 대한민국 올림픽 금메달 종목 특이점.jpg</span> <span>＊여성시대＊ 차분한 20대들의 알흠다운 공간</span></a></li>
+            <li class="fadeIn2"><a href="#"><span>공기소총 반효진 선수 소름인점</span> <span>樂soccer</span></a></li>
+            <li class="fadeIn1"><a href="#"><span>매력 터지는 공기권총 10m 은메달 김예지 인터뷰</span> <span>도탁스 (DOTAX)</span></a></li>
+        </ul>
+       </div> 
+
+
+       <div class="hero-box">
+       <h2 class="fadeIn5"><span>이야기 넷</span>여름에 먹으면 극락 가는 레시피 모음</h2>
+       <ul>
+           <li class="fadeIn4"><a href="#" class="active"><span>오상욱, 오예진이 받게 될 시계 선물.jpg </span> <span>도탁스 (DOTAX)</span></a></li>
+           <li class="fadeIn3"><a href="#"><span>현재 대한민국 올림픽 금메달 종목 특이점.jpg</span> <span>＊여성시대＊ 차분한 20대들의 알흠다운 공간</span></a></li>
+           <li class="fadeIn2"><a href="#"><span>공기소총 반효진 선수 소름인점</span> <span>樂soccer</span></a></li>
+           <li class="fadeIn1"><a href="#"><span>매력 터지는 공기권총 10m 은메달 김예지 인터뷰</span> <span>도탁스 (DOTAX)</span></a></li>
+       </ul>
+       </div> 
+
+
+       <div class="hero-box">
+        <h2 class="fadeIn5"><span>이야기 다섯</span>애미야.. 날씨가 매우 덥구나</h2>
+        <ul>
+            <li class="fadeIn4"><a href="#" class="active"><span>오상욱, 오예진이 받게 될 시계 선물.jpg </span> <span>도탁스 (DOTAX)</span></a></li>
+            <li class="fadeIn3"><a href="#"><span>현재 대한민국 올림픽 금메달 종목 특이점.jpg</span> <span>＊여성시대＊ 차분한 20대들의 알흠다운 공간</span></a></li>
+            <li class="fadeIn2"><a href="#"><span>공기소총 반효진 선수 소름인점</span> <span>樂soccer</span></a></li>
+            <li class="fadeIn1"><a href="#"><span>매력 터지는 공기권총 10m 은메달 김예지 인터뷰</span> <span>도탁스 (DOTAX)</span></a></li>
+        </ul>
+        </div> 
+
+
+       <div class="hero-box">
+       <h2 class="fadeIn5"><span>이야기 여섯</span>슬기로운 여름 자동차 관리 생활</h2>
+       <ul>
+           <li class="fadeIn4"><a href="#" class="active"><span>오상욱, 오예진이 받게 될 시계 선물.jpg </span> <span>도탁스 (DOTAX)</span></a></li>
+           <li class="fadeIn3"><a href="#"><span>현재 대한민국 올림픽 금메달 종목 특이점.jpg</span> <span>＊여성시대＊ 차분한 20대들의 알흠다운 공간</span></a></li>
+           <li class="fadeIn2"><a href="#"><span>공기소총 반효진 선수 소름인점</span> <span>樂soccer</span></a></li>
+           <li class="fadeIn1"><a href="#"><span>매력 터지는 공기권총 10m 은메달 김예지 인터뷰</span> <span>도탁스 (DOTAX)</span></a></li>
+       </ul>
+       </div> 
+
+
+       <div class="hero-box">
+        <h2 class="fadeIn5"><span>이야기 일곱</span>박물관에 가면 특별한 것이 있다🏛️</h2>
+        <ul>
+            <li class="fadeIn4"><a href="#" class="active"><span>오상욱, 오예진이 받게 될 시계 선물.jpg </span> <span>도탁스 (DOTAX)</span></a></li>
+            <li class="fadeIn3"><a href="#"><span>현재 대한민국 올림픽 금메달 종목 특이점.jpg</span> <span>＊여성시대＊ 차분한 20대들의 알흠다운 공간</span></a></li>
+            <li class="fadeIn2"><a href="#"><span>공기소총 반효진 선수 소름인점</span> <span>樂soccer</span></a></li>
+            <li class="fadeIn1"><a href="#"><span>매력 터지는 공기권총 10m 은메달 김예지 인터뷰</span> <span>도탁스 (DOTAX)</span></a></li>
+        </ul>
+       </div> 
+    
+       <a href="#" class="btn btn-left"><i class="ri-arrow-left-wide-line"></i></a>
+       <a href="#" class="btn btn-right"><i class="ri-arrow-right-wide-line"></i></a>
+    </div>
+
+    <section class="sc1">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <a href="#" class="sc1-link">
+                        <div class="sc1-img-box">
+                            <img src="images/맛보기.jpg" class="sc1-img">
+                        </div>
+                        <h2>초등임용고시 같이 공부해요-초임공</h2>
+                        <p>초등임용고시 합격을 위해 정보를 공유하는 카페입니다.</p>
+                        <div class="hash">
+                            <span>추천카페</span>
+                            <span>초등임용</span>
+                            <span>임용</span>
+                            <span>교사</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="sc1-link">
+                        <div class="sc1-img-box">
+                            <img src="images/분할툴.jpg" class="sc1-img">
+                        </div>
+                        <h2>주식으로 수익 내는 비결?-주식마스터즈</h2>
+                        <p>주식, 투자부터 예측까지 차근차근.</p>
+                        <div class="hash">
+                            <span>추천카페</span>
+                            <span>국내주식</span>
+                            <span>해외주식</span>
+                            <span>증권</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="sc1-link">
+                        <div class="sc1-img-box">
+                            <img src="images/아이스크림.jpg" class="sc1-img">
+                        </div>
+                        <h2>기분이 우울할땐 달콤한 것 앞으로 가라-허니비</h2>
+                        <p>디저트 맛집 순회 정보 전부 여기에</p>
+                        <div class="hash">
+                            <span>추천카페</span>
+                            <span>디저트</span>
+                            <span>맛집</span>
+                            <span>후식</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="sc1-link">
+                        <div class="sc1-img-box">
+                            <img src="images/퀵마스크.jpg" class="sc1-img">
+                        </div>
+                        <h2>코디 정해주는 언니-코정언</h2>
+                        <p>이번 시즌 트렌드는? 유행 코디 미리보자.</p>
+                        <div class="hash">
+                            <span>추천카페</span>
+                            <span>코디</span>
+                            <span>룩북</span>
+                            <span>패션</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="sc1-link">
+                        <div class="sc1-img-box">
+                            <img src="images/북극곰.jpg" class="sc1-img">
+                        </div>
+                        <h2>겨울 레포츠 동호회 카페-날으는북극곰</h2>
+                        <p>겨울 스포츠를 좋아하는 사람이라면 누구나 환영합니다.</p>
+                        <div class="hash">
+                            <span>추천카페</span>
+                            <span>스포츠</span>
+                            <span>스키</span>
+                            <span>보드</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="sc1-link">
+                        <div class="sc1-img-box">
+                            <img src="images/테이블.jpg" class="sc1-img">
+                        </div>
+                        <h2>뜨개 마니아들의 공간-한코두코</h2>
+                        <p>이 세상 모든것들을 뜨개질하다.</p>
+                        <div class="hash">
+                            <span>추천카페</span>
+                            <span>취미</span>
+                            <span>뜨개질</span>
+                            <span>뜨개도안</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sc2 container">
+        <h1>추천 테이블</h1>
+        <div class="b-table-wrapper">
+            <a href="javascript:void(0)" class="table-btn btn-prev"><i class="ri-arrow-left-wide-line"></i></a>
+            <a href="javascript:void(0)" class="table-btn btn-next run"><i class="ri-arrow-right-wide-line"></i></a>
+            <div class="b-table">
+                <div class="item-first">
+                    <a href="#" class="table-view">
+                        <img src="images/best_list/레벨.jpg" alt="">
+                        <div class="text-box">
+                            <h2>집밥이 최고시다</h2>
+                            <p>입맛 없는 여름에는</p>
+                            <div class="v">
+                                <span>손님 11.2만</span>
+                                <span>단골 1.777</span>
+                                <span>글 502</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=""><button>홈/리빙 테이블 보기</button></a>
+                </div>
+                <div class="item-view">
+                    <div class="view-detail">
+                        <a href="">
+                            <div class="thumb-img">
+                                <img src="images/포토필터.jpg" alt="">
+                            </div>
+                            <h4>휴일아침 루틴</h4>
+                            <p>새벽잠 일찍 깨서 호박죽 끓이고 검은깨 볶고 냉장고에서 그걸 꺼내서 함께 먹으면 기분이 참 끝내준다.</p>
+                        </a>
+                    </div>
+                    <div class="view-detail">
+                        <a href="">
+                            <div class="thumb-img">
+                                <img src="images/녹색보정.jpg" alt="">
+                            </div>
+                            <h4>초록이로 힐링하는 나날</h4>
+                            <p>요즘 햇빛이 좋아 초록이들의 상태가 매우 좋다. 물을 주면 싱그럽게 살아나는 이파리들을 보고 있으면 절로 마음이 상쾌해지는 듯 하다.</p>
+                        </a>
+                    </div>
+                    <div class="view-detail">
+                        <a href="">
+                            <div class="thumb-img">
+                                <img src="images/20230507_123903.jpg" alt="">
+                            </div>
+                            <h4>정원이 예쁜 카페</h4>
+                            <p>사진찍기 좋은 교외의 정원이 예쁜 카페들을 모아보았다. 인생샷도 건지고 맛있는 커피도 한 잔 할 수 있는 명소들을 소개한다.</p>
+                        </a>
+                    </div>
+                    <div class="view-detail">
+                        <a href="">
+                            <div class="thumb-img">
+                                <img src="images/포토필터.jpg" alt="">
+                            </div>
+                            <h4>휴일아침 루틴</h4>
+                            <p>새벽잠 일찍 깨서 호박죽 끓이고 검은깨 볶고 냉장고에서 그걸 꺼내서 함께 먹으면 기분이 참 끝내준다.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="b-table">
+                <div class="item-first">
+                    <a href="#" class="table-view">
+                        <img src="images/best_list/레벨.jpg" alt="">
+                        <div class="text-box">
+                            <h2>집밥이 최고시다</h2>
+                            <p>입맛 없는 여름에는</p>
+                            <div class="v">
+                                <span>손님 11.2만</span>
+                                <span>단골 1.777</span>
+                                <span>글 502</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=""><button>홈/리빙 테이블 보기</button></a>
+                </div>
+                <div class="item-view">
+                    <div class="view-detail">
+                        <a href="">
+                            <div class="thumb-img">
+                                <img src="images/포토필터.jpg" alt="">
+                            </div>
+                            <h4>휴일아침 루틴</h4>
+                            <p>새벽잠 일찍 깨서 호박죽 끓이고 검은깨 볶고 냉장고에서 그걸 꺼내서 함께 먹으면 기분이 참 끝내준다.</p>
+                        </a>
+                    </div>
+                    <div class="view-detail">
+                        <a href="">
+                            <div class="thumb-img">
+                                <img src="images/녹색보정.jpg" alt="">
+                            </div>
+                            <h4>초록이로 힐링하는 나날</h4>
+                            <p>요즘 햇빛이 좋아 초록이들의 상태가 매우 좋다. 물을 주면 싱그럽게 살아나는 이파리들을 보고 있으면 절로 마음이 상쾌해지는 듯 하다.</p>
+                        </a>
+                    </div>
+                    <div class="view-detail">
+                        <a href="">
+                            <div class="thumb-img">
+                                <img src="images/20230507_123903.jpg" alt="">
+                            </div>
+                            <h4>정원이 예쁜 카페</h4>
+                            <p>사진찍기 좋은 교외의 정원이 예쁜 카페들을 모아보았다. 인생샷도 건지고 맛있는 커피도 한 잔 할 수 있는 명소들을 소개한다.</p>
+                        </a>
+                    </div>
+                    <div class="view-detail">
+                        <a href="">
+                            <div class="thumb-img">
+                                <img src="images/포토필터.jpg" alt="">
+                            </div>
+                            <h4>휴일아침 루틴</h4>
+                            <p>새벽잠 일찍 깨서 호박죽 끓이고 검은깨 볶고 냉장고에서 그걸 꺼내서 함께 먹으면 기분이 참 끝내준다.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="b-table">
+                    <div class="item-first">
+                        <a href="#" class="table-view">
+                            <img src="images/best_list/레벨.jpg" alt="">
+                            <div class="text-box">
+                                <h2>집밥이 최고시다</h2>
+                                <p>입맛 없는 여름에는</p>
+                                <div class="v">
+                                    <span>손님 11.2만</span>
+                                    <span>단골 1.777</span>
+                                    <span>글 502</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href=""><button>홈/리빙 테이블 보기</button></a>
+                    </div>
+                    <div class="item-view">
+                        <div class="view-detail">
+                            <a href="">
+                                <div class="thumb-img">
+                                    <img src="images/포토필터.jpg" alt="">
+                                </div>
+                                <h4>휴일아침 루틴</h4>
+                                <p>새벽잠 일찍 깨서 호박죽 끓이고 검은깨 볶고 냉장고에서 그걸 꺼내서 함께 먹으면 기분이 참 끝내준다.</p>
+                            </a>
+                        </div>
+                        <div class="view-detail">
+                            <a href="">
+                                <div class="thumb-img">
+                                    <img src="images/녹색보정.jpg" alt="">
+                                </div>
+                                <h4>초록이로 힐링하는 나날</h4>
+                                <p>요즘 햇빛이 좋아 초록이들의 상태가 매우 좋다. 물을 주면 싱그럽게 살아나는 이파리들을 보고 있으면 절로 마음이 상쾌해지는 듯 하다.</p>
+                            </a>
+                        </div>
+                        <div class="view-detail">
+                            <a href="">
+                                <div class="thumb-img">
+                                    <img src="images/20230507_123903.jpg" alt="">
+                                </div>
+                                <h4>정원이 예쁜 카페</h4>
+                                <p>사진찍기 좋은 교외의 정원이 예쁜 카페들을 모아보았다. 인생샷도 건지고 맛있는 커피도 한 잔 할 수 있는 명소들을 소개한다.</p>
+                            </a>
+                        </div>
+                        <div class="view-detail">
+                            <a href="">
+                                <div class="thumb-img">
+                                    <img src="images/포토필터.jpg" alt="">
+                                </div>
+                                <h4>휴일아침 루틴</h4>
+                                <p>새벽잠 일찍 깨서 호박죽 끓이고 검은깨 볶고 냉장고에서 그걸 꺼내서 함께 먹으면 기분이 참 끝내준다.</p>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="cafe_best container">
+        <div class="row">
+            <div class="col-8">
+                <div class="best_title">
+                    <h1>카페인기글</h1>
+                    <div class="time-box">
+                        <span class="text-date">
+                            2024.08.08. <strong>09:00</strong>
+                        </span>
+                    </div>
+                </div>
+                <ul class="best_ul">
+                    <li>
+                        <a href="">
+                            <div class="thumb_list"><img src="images/레벨.jpg" alt=""></div>
+                            <div class="text_list">
+                                <span>1</span>
+                                <p class="text_p_list">집밥으로 맛있게 건강 챙기기. 냉장고에 들어있던 바질이랑 캐비어 정도는 있으시죠?</p>
+                            </div>
+                            <div class="writer_list">
+                                <span class="writer">집밥금선생</span>
+                                <span class="comment">3</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="paging">
+                    <a href=""><i class="ri-arrow-left-wide-line"></i></a>
+                    <a href="" class="act">1</a>
+                    <span>/</span>
+                    <a href="">10</a>
+                    <a href=""><i class="ri-arrow-right-wide-line"></i></a>
+                </div>
+            </div>
+            <div class="col-4 notice">
+                <h1>공지</h1>
+                <div class="notice-box">
+                    <a href="#" class="notice-list">닉네임은 감추고 운영은 효율적으로!</a>
+                    <a href="#" class="notice-list">서비스 운영 원칙 및 약관 변경 사전 안내</a>
+                    <a href="#" class="notice-list">다음 에디터 사용 완전 종료</a>
+                    <a href="#" class="notice-list">우리 카페 홍보 신청 방법(New)을 알려드려요!</a>
+                    <a href="#" class="notice-list">우리카페 공식팬카페 신청하기</a>
+                </div>
+                <h1>카페 지원 안내</h1>
+                <div class="cafe-supporters">
+                    <img src="images/cafe_supporters_banner_3.png" alt="">
+                    <img src="images/cafe_supporters_banner_4.png" alt="">
+                </div>
+        </div>
+        </div>
+    </section>
+    <section class="fanCafe">
+        <div class="container fanCafe-list">
+            <div class="fanCafe-head">
+                <h1><span class="head-icon"><i class="ri-camera-lens-line"></i></span>팬카페</h1>
+                <p><a href="#">전체보기</a></p>
+            </div>
+            <div class="fanCafe-col-box">
+                <a href="#" class="fanCafe-col">
+                    <div class="black-num">
+                        <h1>1</h1>
+                    </div>
+                    <img src="images/fancafe1.jpg" alt="">
+                    <div class="fanCafe-col-detail">
+                        <div class="cafe-profile"></div>
+                        <h3>가수</h3>
+                        <div class="cafe-rank">
+                            <p>카페 1등</p>
+                            <p>응원 1등</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="fanCafe-col">
+                    <div class="black-num">
+                        <h1>2</h1>
+                    </div>
+                    <img src="images/fancafe2.jpg" alt="">
+                    <div class="fanCafe-col-detail">
+                        <div class="cafe-profile"></div>
+                        <h3>모델</h3>
+                        <div class="cafe-rank">
+                            <p>카페 3등</p>
+                            <p>응원 4등</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="fanCafe-col">
+                    <div class="black-num">
+                        <h1>3</h1>
+                    </div>
+                    <img src="images/fancafe3.jpg" alt="">
+                    <div class="fanCafe-col-detail">
+                        <div class="cafe-profile"></div>
+                        <h3>배우</h3>
+                        <div class="cafe-rank">
+                            <p>카페 7등</p>
+                            <p>응원 3등</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="f-navi container">
+        <h1>카테고리 <span>별 랭킹 보기</span></h1>
+        <div>
+            <a href="#"><strong>생활 / 경제</strong></a>
+            <a href="#">건강</a>
+            <a href="#">경제 / 금융</a>
+            <a href="#">정치 / 사회</a>
+            <a href="#"><strong>팬카페</strong></a>
+        </div>
+        <div>
+            <a href="#"><strong>친목 / 모임</strong></a>
+            <a href="#">여성</a>
+            <a href="#">게임 / 만화</a>
+            <a href="#"><strong>만화 / 애니메이션</strong></a>
+            <a href="#">영화</a>
+        </div>
+        <div>
+            <a href="#">취미</a>
+            <a href="#"><strong>레저 / 스포츠</strong></a>
+            <a href="#">캠핑 / 아웃도어</a>
+            <a href="#">뮤지컬</a>
+            <a href="#"><strong>러닝크루</strong></a>
+        </div>
+        <div>
+            <a href="#"><strong>학문 / 교육</strong></a>
+            <a href="#"><strong>입시</strong></a>
+            <a href="#">외국어</a>
+            <a href="#">정치 / 사회</a>
+            <a href="#"><strong>팬카페</strong></a>
+        </div>
+        <div>
+            <a href="#"><strong>생활 / 경제</strong></a>
+            <a href="#">건강</a>
+            <a href="#">경제 / 금융</a>
+            <a href="#">정치 / 사회</a>
+            <a href="#"><strong>팬카페</strong></a>
+        </div>
+    </section>
+    <footer class="container">
+        <h1>CAFE<span>Daum</span></h1>
+        <a href="">서비스 약관/정책</a>
+        <a href="">권리침해신고</a>
+        <a href="">이용약관</a>
+        <a href="">상거래 피해구제신청</a>
+        <a href="">카페운영정책</a>
+        <a href="">청소년보호정책</a>
+        <a href=""><strong>개인정보처리방침</strong></a>
+        <a href="">고객센터</a>
+        <a href="">문의하기</a>
+        <p>copywrite.Kakao corp</p>
+        <img src="images/niniz.jpg" alt="">
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jscript.js"></script>
+</body>
+</html>
